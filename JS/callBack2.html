@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function p1(name, callback2, callback3, callback4, callback5, callback6, callback7, callback8, callback9){
+            console.log("Person1 is talking with "+name);
+            setTimeout(callback2, 2000);
+            setTimeout(callback3, 4000);
+            setTimeout(callback4, 6000);
+            setTimeout(callback5, 8000);
+            setTimeout(callback6, 10000);
+            setTimeout(callback7, 12000);
+            setTimeout(callback8, 14000);
+            setTimeout(callback9, 16000);
+        }
+        function p2(){
+            console.log("Person2 is called");
+        }
+        function p3(){
+            console.log("Person3 is called");
+        }
+        function p4(){
+            console.log("Person4 is called");
+        }
+        function p5(){
+            console.log("Person5 is called");
+        }
+        function p6(){
+            console.log("Person6 is called");
+        }
+        function p7(){
+            console.log("Person7 is called");
+        }
+        function p8(){
+            console.log("Person8 is called");
+        }
+        function p9(){
+            console.log("Person9 is called");
+        }
+        p1("Jay", p2, p3, p4, p5, p6, p7, p8, p9);
+    </script>
+</body>
+</html>

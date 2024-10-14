@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log("start");
+        let declare;
+        console.log(declare);
+        declare="Initializer"
+        console.log(declare);
+        let a =20;
+        console.log(a);
+
+        // let redeclare="redeclare"
+        // let redeclare="hello"
+        // console.log(redeclare);
+
+        let b=20;
+        console.log(b);
+        b="hello"
+        console.log(b);
+
+        // note:- Block scope- The variable cannot be  accessible out side of the block
+        //Block is called as block scope variable.
+        if (true) {
+            let block=" Block Scope"
+        }
+
+        //Hoisting: We can initialized the member before its declaration 
+
+        //and its not possible in let variable.
+
+        hoist="hoisting"
+        let hoist;
+        console.log(hoist);
+    </script>
+</body>
+</html>

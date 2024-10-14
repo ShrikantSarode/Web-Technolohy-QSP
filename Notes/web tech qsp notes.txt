@@ -1,0 +1,51 @@
+history of html?
+
+father of html- Tim Berners-Lee.
+
+save file syntax- file_name.extension.
+
+meta- data about the data.
+
+Structure of HTML.-doc ,html, head , body are 4 tags of html to execute.
+
+4 Basic tag require to execute html.
+
+<!DOCTYPE html>=========//declaration about the version.
+
+structure of html-
+
+<!DOCTYPE html>//declaration about the version
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Hello!!!
+</body>
+</html>
+
+html is based on predefined tags.
+predefined has 2 types- paired<open tag along with closed tag> and unpaired(only open tag or self closing tag).
+
+paired - <h1>- opening tag
+         </h1>- Closing tag
+
+unpaired -</>    =>Self closing tag.
+
+what is html?
+
+
+
+
+
+
+
+
+
+
+
+
+

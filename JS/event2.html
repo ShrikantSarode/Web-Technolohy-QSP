@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="print"></h1>
+    <button onclick="getStart()">Get Power</button>
+    <script>
+        let ele=document.getElementById("print")
+        
+        function getStart() {
+            
+            let n1=Number(prompt("Enter number"));
+            let n2= Number(prompt("Enter power"));
+
+            ele.innerHTML=`Power of ${n1} is => ${Math.pow(n1,n2) }`
+            ele.style.color="red"
+        }
+    
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #parent{
+            display: flex;
+           
+
+        }
+        .color{
+           
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;           
+            margin: 20px;
+           
+        }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </div>
+
+    <script>
+let ele=document.getElementsByClassName("color")
+
+      let red = new Promise((res1, rej1) => {
+        setTimeout(() => {
+          res1((ele[0].style.backgroundColor = "red"));
+          rej1("rejected");
+        }, 3000);
+      });
+
+      let orange = new Promise((res2, rej2) => {
+        setTimeout(() => {
+          res2((ele[1].style.backgroundColor = "orange"));
+          rej2("rejected");
+        }, 4000);
+      });
+
+      let yellow = new Promise((res3, rej3) => {
+        setTimeout(() => {
+          res3((ele[2].style.backgroundColor = "yellow"));
+          rej3("rejected");
+        }, 5000);
+      });
+
+      let green = new Promise((res4, rej4) => {
+        setTimeout(() => {
+          res4((ele[3].style.backgroundColor = "green"));
+          rej4("rejected");
+        }, 6000);
+      });
+
+      let blue = new Promise((res5, rej5) => {
+        setTimeout(() => {
+          res5((ele[4].style.backgroundColor = "blue"));
+          rej5("rejected");
+        }, 7000);
+      });
+
+      let pink = new Promise((res6, rej6) => {
+        setTimeout(() => {
+          res6((ele[5].style.backgroundColor = "pink"));
+          rej6("rejected");
+        }, 8000);
+      });
+
+      let purple = new Promise((res7, rej7) => {
+        setTimeout(() => {
+          res7((ele[6].style.backgroundColor = "purple"));
+          rej7("rejected");
+        }, 9000);
+      });
+
+      async function data() {
+        let color1= await red;
+        console.log(color1); 
+
+        let color2= await orange;
+        console.log(color2); 
+
+        let color3= await yellow;
+        console.log(color3); 
+
+        let color4= await green;
+        console.log(color4); 
+
+        let color5= await blue;
+        console.log(color5); 
+
+        let color6= await pink;
+        console.log(color6); 
+
+        let color7= await purple;
+        console.log(color7); 
+      }
+      data()
+    </script>
+  </body>
+</html>

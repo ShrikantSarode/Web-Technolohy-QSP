@@ -1,0 +1,8 @@
+1.Open chrome browser
+2.Type- Favicon.io
+3.There will be 3 options 1- img to icon 2-text to icon 3- emoji to icon.
+4.Select any one of the option.
+5.Drag the img and drop inside the converter and click on the download.
+6.Convert this compered file into extracted format.
+7.Copy that extracted file and paste in current working directory.(CSS Folder)
+8.Declare link:favicon,there is an attribute name as href in the call the expected folder by using "./"

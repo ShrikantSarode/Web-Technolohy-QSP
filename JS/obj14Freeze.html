@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>In freeze() We cannot modify/ change or edit an object.</h1>
+    <script>
+        let duster={
+            company:'Camline',
+            wieght:'200gm',
+            ht:"12cm",
+            price:50
+        }
+
+        console.log(duster);
+        console.log(Object.freeze(duster));
+        console.log(Object.isFrozen(duster));
+        duster.company="Classmate";
+        console.log(duster);
+        duster.color="black";
+        console.log(duster);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

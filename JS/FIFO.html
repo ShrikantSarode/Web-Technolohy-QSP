@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FIFO</h1>
+    <script>
+        console.log("Start");
+
+        function f1() {
+            console.log("F1() Started");
+            f2();
+            console.log("F1() Ended");
+        }
+
+        function f2() {
+            console.log("F2() Started");
+            f3();
+            console.log("F2() Ended");
+        }
+
+        function f3() {
+            console.log("F3() Started");
+            f4();
+            console.log("F3() Ended");
+        }
+
+        function f4() {
+            console.log("F4() Started");
+            f5();
+            console.log("F4() Ended");
+        }
+
+        function f5() {
+            console.log("F5() Started");
+            f6();
+            console.log("F5() Ended");
+        }
+
+        function f6() {
+            console.log("F6() Started");
+            f7();
+            console.log("F6() Ended");
+        }
+
+        function f7() {
+            console.log("F7() Started");
+            f8();
+            console.log("F7() Ended");
+        }
+
+        function f8() {
+            console.log("F8() Started");
+            f9();
+            console.log("F8() Ended");
+        }
+
+        function f9() {
+            console.log("F9() Started");
+            f10();
+            console.log("F9() Ended");
+        }
+
+        function f10() {
+            console.log("F10() Started");
+            // fun();
+            console.log("F10() Ended");
+        }
+        f1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

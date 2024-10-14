@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="print1">Over Karo</h1>
+    <script>
+      let a = document
+        .getElementById("print1")
+        a.addEventListener("mouseover", () => {
+          a.innerHTML = "I hate you";
+          a.style.color = "red";
+        });
+
+      a.addEventListener("mouseout", () => {
+        a.innerHTML = "mein tumse nafrat krta hu";
+        a.style.color = "blue";
+      });
+    </script>
+  </body>
+</html>

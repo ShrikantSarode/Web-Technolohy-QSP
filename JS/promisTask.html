@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise=new Promise((res,rej)=>{
+              setTimeout(()=>{
+                let can1={
+                    name:"jay",
+                    age:20,
+                    status:'',
+                }
+                res(can1.status=true)
+                rej("Rejected")
+              },3000)
+        })
+        promise.then((user)=>{
+              return new Promise((res1,rej1)=>{
+                  res1("Pune")
+              }).then((location)=>{
+                    console.log(`user location is ${location}`);
+              })})
+    </script>
+</body>
+</html>

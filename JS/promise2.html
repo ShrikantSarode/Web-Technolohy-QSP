@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise1=new Promise((res,rej)=>{
+            setTimeout(() => {
+               let user={
+                name:"jay",
+                age:24,
+                proff:"student"
+               } 
+
+               res(user)
+               rej(`error`)
+            }, 3000);
+        }).catch((error)=>{
+            document.write(error)
+        })
+
+        promise1.then((objUser)=>{
+           for (const x  in objUser) {
+            document.write(` ${x} : ${objUser[x]} <br>`)
+           }
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

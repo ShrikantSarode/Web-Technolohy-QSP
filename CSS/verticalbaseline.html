@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    #parent{
+        border: 1px solid;
+        height: 602px;
+        width: 602px;
+        margin-top: 150px;
+        margin: auto;
+    }
+
+    .child{
+        height: 600px;
+        width: 300px;
+        border: 1px solid;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #child2{
+        margin-left: -4px;
+        border-left: none;
+        background-color: yellow;
+    }
+    #child1{
+        border-right: none;
+        background-color: dodgerblue;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2"></div>
+    </div>
+</body>
+</html>

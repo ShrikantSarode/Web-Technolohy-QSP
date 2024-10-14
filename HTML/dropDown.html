@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop-Down</title>
+  </head>
+  <body>
+    <h1>Drop-Down List</h1>
+
+    <!-- Drop-Down LIST IS USED USING SELECT AND OPTION TAG -->
+
+    <select name="" id="">
+      <!-- DISABLED COUNTRY CODE OPTION -->
+      <option value="" selected disabled>COUNTRY CODE</option>
+      <!-- 1ST PRIORITY selected OPTION -->
+      <option value="" selected>+91 INDIA</option>
+      <option value="">+1 USA</option>
+      <option value="">+33 AFRICA</option>
+      <option value="">+991 NEPAL</option>
+    </select>
+
+    <h1>ADVANCED Drop-Down LIST</h1>
+    <!-- <input type="text" list="fruit"> -->
+
+    <!-- datalist tag -->
+<!-- 
+    <datalist id="fruit">
+      <option>Apple</option>
+      <option>Mango</option>
+      <option>Banana</option>
+      <option>Grapes</option>
+      <option>Watermelon</option>
+    </datalist> -->
+
+    <label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+  </body>
+</html>

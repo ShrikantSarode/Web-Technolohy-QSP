@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head1"></h1>
+    <button id="btn">Click Here</button>
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        let a = document.getElementById("head1");
+        a.innerHTML = "Add EventListener is invoked!!!!!";
+      });
+    </script>
+  </body>
+</html>

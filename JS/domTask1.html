@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="head">1</h1>
+    <p class="para">
+       
+      </p>
+    <h1 class="head">2</h1>
+    <h1 class="head">3</h1>
+    <p class="para">
+       
+      </p>
+    <h1 class="head">4</h1>
+    <p class="para">
+     
+    </p>
+   
+    <script>
+      let heading = document.getElementsByClassName("head");
+      let parag = document.getElementsByClassName("para")
+
+      for (let i = 0; i < heading.length; i++) {
+      
+          heading[i].innerHTML = "even Heading";
+          heading[i].style.backgroundColor = "blue";
+          heading[i].style.color = "red";
+        if (parag[i]) {
+            parag[i].style.backgroundColor="yellow"
+        }
+        for (let i = 0; i < parag.length; i++){
+            parag[i].innerHTML="lorem"
+            parag[i].style.backgroundColor="yellow"
+
+        }
+      }
+    </script>
+  </body>
+</html>

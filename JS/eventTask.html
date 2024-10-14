@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           background-color: black;
+           color: red;
+            height: 100px;
+            width: 300px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 20px;
+            text-shadow: 2px 2px 2px purple;
+            
+        }
+        #incr{
+            padding: 20px;
+            margin: 10px;
+        }
+        #decr{
+            padding: 20px;
+            margin: 10px;
+        }
+        #print1{
+            padding: 10px;
+            font-size: 40px;
+        }
+        .btns{
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="incr" onclick="increment()" class="btns">+</button>
+        <p id="print1" >0</p>
+        <button id="decr" onclick="decrement()" class="btns">-</button>
+        <script>
+            let op=document.getElementById("print1")
+            let count=0;
+
+            let increment=()=>{
+                if (count>=0) {
+                    count++;
+                    op.innerHTML=`${count}`
+                }
+            }
+
+            let decrement=()=>{
+                if (count>0) {
+                    count--;
+                    op.innerHTML=`${count}`
+                    
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </div>
+</body>
+</html>

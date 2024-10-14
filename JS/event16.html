@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" name="" id="inp" onfocusin="getFocusIn()" onfocusout="getFocusOut()">
+
+    <script>
+
+        let a = document.getElementById("inp")
+      
+
+        function getFocusIn() {
+           
+            a.value=ele=a.value.toUpperCase()
+           
+            a.style.color="blue"
+            a.style.textAlign="center"
+        }
+        function getFocusOut() {
+            a.value=ele=a.value.toLowerCase()
+            a.style.backgroundColor="red"
+            a.style.color="white"
+            a.style.textAlign="center"
+            
+        }
+
+
+
+
+    </script>
+</body>
+</html>

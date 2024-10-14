@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+function Country(name) {
+  this.name = name;
+  this.states = [];
+}
+
+
+function State(name, cm, capital, districtCount, motherTongue) {
+  this.name = name;
+  this.cm = cm;
+  this.capital = capital;
+  this.districtCount = districtCount;
+  this.motherTongue = motherTongue;
+}
+
+// Create instances of State and Country
+var country1 = new Country("India");
+var state1 = new State("Maharashtra", "Eknath Shinde", "Mumbai", 36, "Marathi");
+var state2 = new State("Karnataka", "Basavaraj Bommai", "Bengaluru", 30, "Kannada");
+var state1 = new State("Goa", "Eknath Shinde", "Mumbai", 36, "Marathi");
+var state2 = new State("uttar Pradesh", "yogi Adityanath", "Lucknow", 40, "Kannada");
+
+    </script>
+    
+</body>
+</html>

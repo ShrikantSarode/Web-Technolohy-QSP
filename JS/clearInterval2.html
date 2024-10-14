@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="print">Check your lucky number here</p>
+    <button  onclick="getStart()">Start</button>
+    <button  onclick="getStop()">Stop</button>
+    <script>
+      let a = 0;
+      let print1 = document.getElementById("print");
+
+      let timer;
+      function getStart() {
+        print1.innerHTML="Loding.....!!!";
+        print1.style.color="blue"
+        timer = setInterval(() => {
+          print1.innerHTML ="Your lucky number is "+ ++a;
+        
+          print1.style.color="green";
+        },1000);
+
+      }
+
+      function getStop() {
+        clearInterval(timer)
+        print1.style.color="red"
+       
+        if (a%2==0) {
+            document.write("Your lucky number is Even number ..: "+a);
+            print1.style.color="red"
+          } else {
+            document.write("Your lucky number is Odd number ..: "+a);
+            
+          }
+          
+        
+      }
+    </script>
+  </body>
+</html>

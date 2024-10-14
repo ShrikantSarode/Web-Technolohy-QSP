@@ -1,0 +1,51 @@
+Js Notes:-16-9-23.
+1.Higher order function-
+A Higher order function is a function that accept functions as aparameter or return a function.ES06 feature.
+
+code:-
+function parent(){
+
+	console.log("Hello");
+
+	return	()=>{
+
+	console.log("this is HOF");
+
+	}
+}
+
+parent()();
+
+2.Callback Function(ES06 feature):-
+A js callback function is function which is to be executed after another function as finshed execution.
+
+code:-
+        function person1(name,callback) {
+            console.log("Person1 is talking with...: "+name);
+            setTimeout(callback,4000);   
+        }
+      
+        function person3() {
+            console.log("Person3 has called using callback function");
+            
+        }
+        person1("Jay",person3);
+
+
+
+
+
+‎
+
+
+
+
+
+
+
+
+
+
+
+
+

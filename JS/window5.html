@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let name=prompt("enter your name");
+        let age=prompt("enter your age");
+        let citizen=confirm("Are u indian");
+
+        if (age>=18 && citizen==true) {
+            let voter={votername:name,voterAge:age,citizenship:citizen}
+            console.log(voter);
+
+            // for loop for object
+            for (const x in voter) {
+                console.log(voter[x]);
+
+                 // document.write(x+" :"+ voter[x] )
+               // document.write(voter[x]+"<br> ");
+               document.write(`${x}: ${voter[x] } <br>`)
+             
+               
+            }
+        }else 
+        {
+            alert("goto home and watch pogo");
+           
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

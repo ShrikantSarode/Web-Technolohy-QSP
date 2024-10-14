@@ -1,0 +1,466 @@
+#the
+
+*background property:-
+1 bg color
+2.bg repeat
+3.bg attachment
+4.bg position
+5.bg img
+6.bg-size
+
+*css bg color:-
+
+the bg color property specify the bg color of an element.
+example:- 
+
+body {
+	bg-color: red;
+}
+
+*CSS bg-image:-
+
+The bg-img property specify's an image to used the bg of an element.
+By default, the image is repeated so it's covered the entire element.
+
+example-
+
+body{
+	bg-img:url(./);
+	}
+
+*Css bg-repeate: no-repeat-
+Showing the bg-img only once is also specify's by the bg-img property.
+ex:-
+
+body{
+	bg-img:url(./);
+	bg-repeat:no-repeat;	
+}
+
+*CSS BG-POSITION :-
+
+the css bg property is used to specify the position of bg-img.
+ex:-
+
+body{
+	bg-img:url(./);
+	bg-repeat: no-repeat
+	BG-position: top-right;
+	}
+
+POSITIONS:-
+1-top-left(default)
+2-top-center
+3-top-right
+4-center-left
+5-center
+6-center-right
+7-bottom-right
+8-bottom-left
+9-bottom-center
+
+*CSS BG-ATTACHMENT:-
+The bg-attachment properties specifies wether the bg-img should scroll or be fixed.(Will not scroll with the rest of the page).
+EX-
+1-Specify that the bg-img should be fixed.
+body{
+	bg-img:url(./);
+	bg-repeat: no-repeat
+	BG-position: right-top;
+	bg-attachment: fixed;
+	}
+2-Specify that the bg-img should be scroll.
+body{
+	bg-img:url(./);
+	bg-repeat: no-repeat
+	BG-position: right-top;
+	bg-attachment: scroll;
+	}
+
+css bg-size:-
+the bg-size properties specify's the size of bg-img.
+ex-
+body{
+	bg-img:url(./);
+	bg-repeat: no-repeat;
+	bg-size: cover;
+	}
+
+*CSS OVERFLOW-
+
+the overflow properties specify's welther to clip the content or to add scroll bars when the content of the element is too big to fit in specificed area.
+The overflow properties has following values:-
+1-visible(default)
+2-hidden
+3-scroll
+
+1-Visible-
+The overflow is not clipped.The content render outide the box.
+
+2-Hidden
+The overflow is clipped and rest of the content is invisible.
+
+3-Scroll-
+The overflow is clipped, and a scroll bar is added to see the rest of the content.
+
+4-Auto -
+
+Auto is simillar to scroll but it add only when the content is overflow.
+
+*OVERFLOW X AND OVERFLOW Y-
+the overflow-x,y properties specify wether to change the content is just vertical or horizontaly or both-
+
+1-Overflow x specify's what to do with the left-right edges of the content.
+
+2-overflow-y specify what to do with top-bottom content of edges of y.
+
+TEXT PROPERTIES:-
+	1 text-color -
+	The property is used to set the color of the text.The color is specified by - a color_name like red.
+										    - #123999 or #fff
+										    - rgb(255,222,222).
+	2 text-alignment -
+
+	1. text-align
+	2. text-align last
+	3. direction
+
+TEXT ALGINMENT -
+	The text alginment property used to set the horizintal alinement of the text.
+	A text can be left or right , center or justify.
+
+THE FOLLOWING EX SHOWS CENTER ALIGN & LEFT AND RIGHT:-
+h1{
+ 	text-aline:center;
+   }
+
+h1{
+ 	text-aline:left;
+   }
+
+h1{
+ 	text-aline:right;
+   }
+
+When the text align property is set to justify , each line is streched so that every line has equal width , and the left and right margin are streched.
+Like in magzines oor Newspaper.
+
+p{
+text-align : justify;
+}
+
+TEXT-ALINE-LAST:-
+The text-alinelast property specifies how to aline last line property.
+
+#box{
+text-align-last : justify;
+}
+
+#box{
+text-align-last : center;
+}
+
+TEXT-DIRECTION:-The direction property can be used to change the text direction of an element.
+
+NOTE:- By default the direction is left to right ( ltr).
+
+We can change right to left (rtl).
+
+p{
+text-direct: ltr;
+}
+
+p{
+text-direction:rtl;
+}
+
+TEXT-DECORATION:- 1.Text-decoration-line 2.text-decoration-color 3.text-decoration-style 4.text-decoration.
+
+TEXT-DECORATION-LINE:- The text-decoration-line property is used to add line to decoration text.
+
+
+TIP- You can combine more than 1 value, like overline and underline to display both over and under text.
+
+Ex;-
+
+text-decoration: overline;
+text-decoration: linethrow;
+text-decoration: underline;
+text-decoration: overline underline;
+
+SPECIFY A COLOR FOR THE TEXT-DECORATION LINE:-
+
+The text-decoration color property is used to set the color of the text-decoration line.
+
+h1{
+text-decoration: overline;
+text-decoration-color: red;
+}
+
+SPECIFY A STYLE FOR text-decoration-line:
+
+THE text-decoration-style property is used to set the style of the text-decoration line.
+
+h1{
+text-decoration-style:dashed;
+text-decoration-style:dotted;
+text-decoration-style:solid;
+text-decoration-style:wavy;
+text-decoration-style:double;
+}
+
+SPECIFY THE THICKNESS OF THE text-decoration-LINE:-THE text-decoration-thickness property is used to set the thickness of the text-decoration line.
+
+h1{
+text-decoration-thickness: dashed 5px;
+}
+text-decoration-thickness:underline 25%;
+
+THE SHORT HAND PROPERTY:-
+The text-decoration property is a short hand property for :-1. text-decoration-line(required) 2.text-decoration-color(optional) 3.text-decoration-style(optional) 4.text-decoration-thickness(line)
+
+h1{
+text-decoration:underline;
+}
+
+h2{
+text-decoration: underline red;
+}
+
+h3{
+text-decoration:underline red double;
+}
+h4{
+text-decoration:underline red double 5px;
+}
+
+A SMALL TIP:- All links in html are underline by default. Sometimes you see that links are styled with no underline. The text-decoration:none; is used to remove the underline from links.
+
+a{
+text-decoration:none;
+}
+
+TEXT TRANSFORMATION:- The text transform property is used to specify uppercase and lowercase letter in a text.It can be used to turn everything into uppercase or lowercase letters , or capatize the 1st letter of each word.
+
+h1{
+text-transform:uppercase;
+}
+
+h1{
+text-transform:lowercase;
+}
+
+
+h1{
+text-transform:capitalize;
+}
+
+TEXT-SPACING:- 1. letter spacing 2. line-height 3. word-spacing 4.text-indantation.
+
+
+text-indantation:- it is used to specify the indentation of the 1st line of the text.
+
+p{
+text-indent:50px;
+}
+
+LETTER-SPACING:- it is used to specify the spacing bettween characters in a text.
+
+ 
+p{
+letter-spacing:50px;
+}
+
+LINE-HEIGHT:- It is used to specify the space bettween the line.
+
+p{
+line-height: 0.8px;
+}
+
+p{
+line-height: 8px;
+}
+
+WORD-SPACING:- It is used to specify the spacing bettween word in a text. 
+
+p{
+word-spacing:1px;
+}
+
+TEXT-SHADOW:- The text-shadow property add shadow to the text.In it simplest used, you only specify the only shadow vertical and horizontal.
+
+h1{
+text-shadow: 2px 2px 2px red;
+}
+
+19-08-23
+
+Flex-direction Property:-The flex direction property defines in which direction the container wants to flow the flex items.
+
+.parent{
+display:flex;
+flex-direction:row;(default)
+}
+
+#child1{
+	h-100px;
+	w-100px;
+}
+flex-flow:- It is a shortend properties for the setting both the flex-flow property.
+
+case1:
+.parent{
+display:flex;
+flex-flow: row wrap;
+}
+case2:
+.parent{
+display:flex;
+flex-flow: row-reverse wrap;
+}
+
+align-content Property:-The align-content Property is used to align the flex lines. (rows/columns)
+
+.parent{
+display:flex;
+align-content:space-between;
+flex-flow: row wrap;
+}
+
+.parent{
+display:flex;
+align-content:space-between;
+flex-flow: column wrap;
+}
+
+Note:- The align-item property is changing the alignment according to it's direction.
+
+1-If flex direction is row then, align content property align the lines about cross axis.
+
+2-If flex direction is column then, align content property align the lines about main axis.
+
+The Order Property:-The Order Property Specifies the order od the flex items.
+
+.parent{
+display:flex;
+order:1;
+}
+.child{
+text-align:center;
+}
+
+Deafult order of the child boxes is zero.
+.parent{
+display:flex;
+}
+#child{
+order:4;
+}
+
+Note: The order value must be a number, default value is zero.
+
+The flex-grow Property:-The flex-grow Property specifies how much a flex item will grow relative to the rest of the flex item.
+
+.parent{
+display:flex;
+}
+#child3{
+flex-flow:5;
+}
+Note: The order value must be a number, default value is zero.
+
+The flex-shrink Property:-The flex-shrink Property specifies how much a flex item will shrink relative to the rest of the flex item.
+.parent{
+display:flex;
+}
+#child2{
+flex-shrink:0;
+}
+
+Note: default values is 1.
+
+The flex-basis Property:-The flex-basis Property specifies the initial length of flex item.
+
+#child2{
+flex-basis:100px
+width:50px;
+}
+
+The flex Property:-The flex Property is a shortend property for the flex-grow, flex-shrink,and flex-basis properties.
+
+.parent{
+flex: 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

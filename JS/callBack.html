@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback Function</h1>
+    <script>
+      
+        function person1(name,callback) {
+            console.log("Person1 is talking with...: "+name);
+            setTimeout(callback,4000);
+          
+            
+        }
+      
+        function person3() {
+            console.log("Person3 has called using callback function");
+            
+        }
+        person1("Jay",person3);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

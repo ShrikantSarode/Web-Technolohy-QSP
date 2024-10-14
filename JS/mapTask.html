@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let player = ["Virat", "Dhomi", "Sewag", "yuraj", "Hardik", "Panday"];
+      console.log(player);
+
+      //   evenPlayers=player.map((data,index1)=>{
+      //       if (index1+1)%2==0) {
+      //         return data+"MI"
+
+      //       }
+      //     })
+
+      evenPlayers = player.map((data, index1) => {
+        if ((index1 + 1) % 2 == 0) {
+          return data + " MI";
+        } else if ((index1 + 1) % 2 == 1) {
+          return data + " CSK";
+        }
+      });
+      console.log(evenPlayers);
+
+      // let nameIndex = fName.map((data, index1) => {
+      //         if ((index1+1)%2==0) {
+      //             return data+ "Chavan"
+      //         }
+    </script>
+  </body>
+</html>

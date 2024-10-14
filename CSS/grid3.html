@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color:purple ;
+        /* margin-top: 100px; */
+        padding: 40px;
+        
+        
+    }
+    .block{
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: aliceblue;
+        text-align: center;
+    }
+    @media  (max-width:500px) {
+        .parent{
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 10px;
+        background-color:greenyellow ;
+       
+        padding: 40px;    
+    }
+    .block{
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: aliceblue;
+        text-align: center;
+    }
+        
+    }
+    @media (min-width:501px)and (max-width:1000px) {
+        .parent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color:blue ;
+        /* margin-top: 100px; */
+        padding: 40px;    
+    }
+    .block{
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: aliceblue;
+        text-align: center;
+    }
+        
+        
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="block">Block1</div>
+        <div class="block">Block2</div>
+        <div class="block">Block3</div>
+        <div class="block">Block4</div>
+        <div class="block">Block5</div>
+        <div class="block">Block6</div>
+        <div class="block">Block7</div>
+        <div class="block">Block8</div>
+        <div class="block">Block9</div>
+        <div class="block">Block10</div>
+        <div class="block">Block11</div>
+        <div class="block">Block12</div>
+    </div>
+
+    
+</body>
+</html>

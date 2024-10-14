@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Data Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Employee Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Location</th>
+        <th>Profession</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+    </tbody>
+  </table>
+
+  <script>
+    // JSON data for employees
+    var employeeData = [
+      {
+        "id": 1,
+        "ename": "John Doe",
+        "sal": 75000.00,
+        "location": "New York",
+        "proff": "Software Engineer"
+      },
+      {
+        "id": 2,
+        "ename": "Jane Smith",
+        "sal": 65000.00,
+        "location": "San Francisco",
+        "proff": "Marketing Manager"
+      },
+      // Add more employee data here
+    ];
+
+    // Function to create the HTML table
+    function createTable(data) {
+      var tableBody = document.getElementById('employeeTableBody');
+      for (var i = 0; i < data.length; i++) {
+        var row = document.createElement('tr');
+        row.innerHTML = '<td>' + data[i].id + '</td>' +
+                        '<td>' + data[i].ename + '</td>' +
+                        '<td>' + data[i].sal + '</td>' +
+                        '<td>' + data[i].location + '</td>' +
+                        '<td>' + data[i].proff + '</td>';
+        tableBody.appendChild(row);
+      }
+    }
+
+    // Call the function to populate the table
+    createTable(employeeData);
+  </script>
+</body>
+</html>

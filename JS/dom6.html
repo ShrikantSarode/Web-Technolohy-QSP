@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head1"></h1>
+    <p id="para1"></p>
+    <h2 id="head2"></h2>
+    <p id="para2"></p>
+    <button onclick="getStart()">Start</button>
+
+    <script>
+      function getStart() {
+        ele1 = document.getElementById("head1");
+        ele2 = document.getElementById("para1");
+        ele3 = document.getElementById("head2");
+        ele4 = document.getElementById("para2");
+        ele = prompt("Enter element");
+
+        if (ele == "ele1" ||ele == "ELE1") {
+          ele1.innerHTML = "Heading one bhai..!!";
+          ele1.style.color = "red";
+        } else if (ele == "ele2" ||ele == "ELE2") {
+            ele2.innerHTML = "para one bhai..!!";
+          ele2.style.color = "blue";
+        }else if (ele == "ele3" ||ele == "ELE3") {
+            ele3.innerHTML = "heading two bhai..!!";
+          ele3.style.color = "hotpink";
+        }
+        else  if(ele == "ele4" ||ele == "ELE4")  {
+            ele4.innerHTML = "para two bhai..!!";
+          ele4.style.color = " orange";
+        }
+      }
+    </script>
+  </body>
+</html>

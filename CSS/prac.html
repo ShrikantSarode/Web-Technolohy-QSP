@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Images in One Box</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Reset some default styles to avoid unexpected behavior */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container to hold the images */
+.image-box {
+  width: 1400px;
+  height: 1400px;
+  border: 1px solid #000;
+  position: relative;
+  margin: auto;
+}
+
+/* Style each image within the container */
+.image-box img {
+  position: absolute;
+}
+
+/* Adjust the position of each image as desired */
+.image-box img:nth-child(1) {
+  top: 0;
+  left: 0;
+  margin-left: 300px;
+}
+
+.image-box img:nth-child(2) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-70%);
+}
+
+.image-box img:nth-child(3) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-70%);
+}
+
+</style>
+<body>
+  <div class="image-box">
+    <img src="./tree.jpg" alt="" style="border: 1px solid;">
+    <img src="./tree.jpg" alt="" style="border: 1px solid;">
+    <img src="./tree.jpg" alt="" style="border: 1px solid;">
+  </div>
+</body>
+</html>

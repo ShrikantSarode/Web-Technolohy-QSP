@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let obj= new Object();
+
+        obj.name="Jay"
+        obj.age=24
+        obj.proff="Engineer"
+
+        console.log(obj);
+
+        let obj1=new Object()
+        obj1.nesObj1={name:"This is nested Obj",type:"object"}
+        obj1.fun=()=>{console.log("This is function inside nested object"); }
+        console.log(obj1);
+        obj1.fun();
+
+      
+
+        let obj3 ={
+        fun:function(){
+           let obj5={ a:10,
+            b:20,
+            c:30
+           }
+        }
+    }
+        console.log(obj3);
+        obj3.fun()
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

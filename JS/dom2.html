@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h1 id="print"></h1>
+        <button onclick="getPrint()">Print Message</button>
+        <button onclick="getCreate()">Box Banav bhau</button>
+
+    </div>
+
+    <script>
+        let box1=document.getElementById("box")
+        let print1=document.getElementById("print")
+
+        function getCreate() {
+            box1.style.height="200px"
+            box1.style.width="200px"
+            box1.style.color=prompt("Enter your fav color")
+        }
+        function getPrint() {
+            print1.innHTML="Hello I am Shrikant..!!"
+            print1.style.color="red"
+        }
+
+    </script>
+</body>
+</html>

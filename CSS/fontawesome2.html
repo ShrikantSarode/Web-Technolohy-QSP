@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <style>
+    body{
+        background-color: black;
+    }
+    #parent {
+      height: 500px;
+      width: 500px;
+      border: 1px solid;
+      margin: auto;
+      box-shadow: 2px 2px 2px white;
+      margin-top: 100px;
+      border-radius: 30px;
+      background-color: black;
+    }
+    .child {
+        border-top:5px solid white;
+        color: #fff;
+        background-color: black;
+      height: 30px;
+      width: 400px;
+      margin: auto;
+      /* margin-left: 40px; */
+      margin-top: 50px;
+      border-radius: 30px;
+      text-align: center;
+    }
+    .child:hover{
+        border-top: none;
+        border-bottom: 5px solid red;
+    }
+    #btn {
+      margin-left: 165px;
+      height: 60px;
+      padding: 20px;
+      text-align: center;
+      width: 150px;
+    }
+    #icon1 {
+     
+      color: #fff;
+      
+    }
+
+    #childl1 {
+      margin-left: 30px;
+      display: inline-block;
+    }
+    #form{
+        margin-left: 30px;
+    }
+  </style>
+  <body>
+    <div id="parent">
+      <form action="" id="form">
+        <!-- <div id="child1">text input</div>
+        <div id="child2">email</div>
+        <div id="child3">date</div>
+        <div id="child4">submit</div> -->
+        <div id="child1">
+          <i class="fa fa-address-card-o" aria-hidden="true" id="icon1"></i>
+          <input
+            placeholder="Enter Your Name"
+            class="child"
+            type="text"
+            name=""
+            id="text"
+          />
+        </div>
+        <div id="child2">
+          <i class="fa fa-envelope-o" aria-hidden="true" id="icon1"></i>
+          <input
+            placeholder="Enter M@il"
+            class="child"
+            type="email"
+            name=""
+            id="email"
+          />
+        </div>
+        <div id="child3">
+          <i class="fa fa-calendar" aria-hidden="true" id="icon1"></i>
+          <input
+            placeholder="DOB"
+            class="child"
+            type="date"
+            name=""
+            id="date"
+          />
+        </div>
+        <input
+          placeholder=""
+          class="child"
+          type="submit"
+          value="Submit"
+          id="btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head" onmousedown="getEven()" onmousedown="getOdd()">Get Number</h1>
+
+    <script>
+
+        let ele= document.getElementById("head")
+        let number=0;
+        function getEven() {
+            
+            if ((number+1) %2==0) {
+                ele.innerHTML=`${number++} is even`
+                ele.style.color="red"
+            }
+        }
+        function getOdd() {
+            if((number+1) %2 !=0){
+                ele.innerHTML=`${number++} is odd`
+                ele.style.backgroundColor="blue"
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

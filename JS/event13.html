@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1  id="head1" oncopy="getCopy()" >Copy this text</h1>
+    <div id="box"></div>
+    <script>
+
+        let a = document.getElementById("head1")
+        let b= document.getElementById("box")
+
+        function getCopy() {
+            alert("your txt is copied!!!!!!!!!")
+
+            b.style.height="200px"
+            b.style.width="200px"
+            b.style.border="1ps solid"
+            b.style.borderRadius="100px"
+            b.style.backgroundColor="red"
+        }
+
+
+
+
+    </script>
+</body>
+</html>

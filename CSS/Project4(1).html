@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    #parent{
+        height: 400px;
+        width: 100%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        background-image: url(./river-5936684_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 2px 2px;
+    }
+    nav ul li{
+        display: inline-block;
+        color: white;
+        margin-top: 25px;
+        margin-right: 70px;
+       
+    }
+    li a{
+        text-decoration: none ;
+        text-align: center;
+    }
+    .form{
+        height: 500px;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        /* border: 1px solid; */
+    }
+    #form{
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+    }
+    #f1{
+        padding: 30px;
+        width: 50%;
+        margin: auto;
+        box-shadow: 2px 2px 2px;
+    }
+    .f1{
+       margin-left: 238px;
+}
+    #btn{
+        padding: 30px;
+        width: 40%;
+        background-color: dodgerblue;
+        margin: auto;
+        margin-top: 30px;
+        height: 20px;
+        text-align: center;
+        box-shadow: 2px 2px 2px;
+    }
+    h1{
+        font-family: "Brush Script MT", "Brush Script Std"," cursive";
+        color: white;
+        font-size: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #contact{
+    padding: 10px;
+    background-color: red;
+    display: inline-block;
+    height: 58px;
+    width: 90px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+    
+</style>
+<body>
+    <div id="parent">
+        <h1>Send Us a Note</h1>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Rooms</li>
+                <li><a href="#"></a>Resturant</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Blog</li>
+                <div id="contact">
+                <li ><a href="#" ></a>Contact</li></div>
+            </ul>
+        </nav>
+    </div>
+    <div class="form">
+        <form action="" id="form" >
+            <label for="" class="f1">Your Name*</label>
+            <input type="text" name="" id="f1" required><br>
+
+            <label for="" class="f1">Your Email address*</label>
+            <input type="email" name="" id="f1" required><br>
+
+            <label for="" class="f1">Message*</label>
+            <textarea name="" id="f1" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Send Message" id="btn">
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>

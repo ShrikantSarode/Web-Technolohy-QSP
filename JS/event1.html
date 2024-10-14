@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>onClick Event</h2>
+    <h1 id="print"></h1>
+    <button onclick="getStart()">Say Hello!!</button>
+    <script>
+      let ele = document.getElementById("print");
+      let name = prompt("Enter your name");
+
+      function getStart() {
+        ele.innerHTML = `Hello ${name}`;
+        ele.style.color = "red";
+      }
+    </script>
+  </body>
+</html>

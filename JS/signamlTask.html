@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 500px;
+        width: 300px;
+        border: 1px solid;
+        margin: auto;
+        background-color: black;
+    }
+    .bulb{
+        height:150px ;
+        width: 200px;
+        border: 1px solid ;
+        border-radius: 50%;
+       box-shadow: 2px 2px 2px;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
+        
+</style>
+<body>
+    <div id="box">
+        <div class="bulb"></div>
+        <div class="bulb"></div>
+        <div class="bulb"></div>
+    </div>
+   
+    <script>
+        let light=document.getElementsByClassName("bulb")
+        let signal=prompt("signal")
+        if(signal=="stop" || signal=="STOP")
+        {
+            light[0].style.backgroundColor="red"
+        }
+        else if(signal=="caution" || signal=="CAUTION"){
+            light[1].style.backgroundColor="orange"
+        }
+        else if(signal=="start" || signal=="START"){
+            light[2].style.backgroundColor="green"
+        }
+        else{
+            alert("invalid input");
+        }
+
+    </script>
+</body>
+</html>

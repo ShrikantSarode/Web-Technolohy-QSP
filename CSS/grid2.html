@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        grid-template-areas:
+         "header1 header1 header1 header1 header1 header1"
+         "header2 header2 header3 header3 header4 header4"
+         "header5 header5 header5 header6 header6 header6"
+         "header7 header7 header8 header8 header9 header9";
+         gap: 20px;
+         padding: 20px;
+        background-color: purple;
+    }
+    .box{
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 40px;
+        
+    }
+
+    #header1{
+        grid-area: header1;
+    }
+    #header2{
+        grid-area: header2;
+    }
+    #header3{
+        grid-area: header3;
+    }
+    #header4{
+        grid-area: header4;
+    }
+    #header5{
+        grid-area: header5;
+    }
+    #header6{
+        grid-area: header6;
+    }
+    #header7{
+        grid-area: header7;
+    }
+    #header8{
+        grid-area: header8;
+    }
+    #header9{
+        grid-area: header9;
+    }
+</style>
+<body>
+    <div class="parent">
+        
+        <div class="box" id="header1">header1</div>
+        <div class="box" id="header2">header2</div>
+        <div class="box" id="header3">header3</div>
+        <div class="box" id="header4">header4</div>
+        <div class="box" id="header5">header5</div>
+        <div class="box" id="header6">header6</div>
+        <div class="box" id="header7">header7</div>
+        <div class="box" id="header8">header8</div>
+        <div class="box" id="header9">header9</div>
+    </div>
+    
+</body>
+</html>

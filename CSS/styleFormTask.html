@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: cadetblue;
+    }
+    #form{
+        height: 500px;
+        width: 500px;
+        border: 1px solid;
+        margin: auto;
+        margin-top: 100px;
+        padding: 30px;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 20px 20px 20px ;
+        background-image: linear-gradient(to right bottom,#8A2387,#E94057,#F27121);
+    }
+    .inp{
+        background-image: linear-gradient(to bottom left ,#ad5389,#3c1053);
+        display: block;
+        padding: 20px;
+        font-size: 20px;
+        margin: 20px 10px 10px 40px;
+        height: 20px;
+        width: 320px;
+        outline: none;
+        border-top:none ;
+        border-right: none;
+        border-left: none;
+        border-radius: 30px;
+       color: white;
+    }
+    .btn{
+       
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+       margin: auto;
+        border-radius: 30px;
+    }
+    .radio{
+        margin-bottom: 20px;
+        display: block;
+        margin-top: 20px;
+        margin-left: 200px;
+        font-size: 20px;
+        height: 20px;
+        width: 50px;
+       border: 1px solid;
+       padding: 10px;
+       border-radius: 30px;
+       background-color: #8A2387;
+    }
+    nav ul{
+        height: 100px;
+        width: 100%;
+        background-color: #3c1053;
+    }
+    ul li{
+        display: inline-block;
+        padding: 30px;
+    }
+    a{
+        text-decoration: none;
+        background-color: #592d70;
+        padding: 20px;
+        border-radius: 30px;
+        box-sizing: border-box;
+        box-shadow: 4px 3px 5px white;
+        color: darkorange;
+    }
+    a:hover{
+        background-image: url(./ai-generated.jpg);
+        box-shadow: 4px 3px 5px red;
+    }
+</style>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+  
+   
+    <form id="form" action="">
+        <input class="inp" placeholder="Enter Name" autofocus type="text" name="" id="">
+        <input class="inp" placeholder="M@il" type="email" name="" id="">
+        <input class="inp" placeholder="Password" type="password" name="" id="">
+        <input class="inp" placeholder="M@il" type="date" name="" id="">
+        <input class="inp" placeholder="Mobile Number" type="tel" name="" id="">
+        <label class="radio" for="">Male</label>
+        <input class="radio"  type="radio" name="gen" id="">
+        <label class="radio" for="">Female</label>
+        <input class="radio" type="radio" name="gen" id="">
+        <label class="radio" for="">other</label>
+        <input class="radio" type="radio" name="gen" id="">
+        
+        <input class="btn" type="submit" value="Submit">
+    </form>
+
+</main>
+</body>
+</html>

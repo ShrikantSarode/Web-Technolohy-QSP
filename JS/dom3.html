@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="box" id="box1"></div><br>
+   <div class="box" id="box2"></div><br>
+   <div class="box" id="box3"></div><br>
+
+   <button onclick="get1()">red</button>
+   <button onclick="get2()">green</button>
+   <button onclick="get3()">orange</button>
+
+    </div>
+    <script>
+        let bulb1=document.getElementById("box1")
+        let bulb2=document.getElementById("box2")
+        let bulb3=document.getElementById("box3")
+
+        function get1() {
+            box1.style.height="200px"
+            box1.style.width="200px"
+            box1.style.backgroundColor="red"
+          
+        }
+        function get2() {
+            box2.style.height="200px"
+            box2.style.width="200px"
+            box2.style.backgroundColor="green"
+            
+        }
+
+        function get3() {
+            box3.style.height="200px"
+            box3.style.width="200px"
+            box3.style.backgroundColor="orange"
+        }
+
+
+    </script>
+</body>
+</html>

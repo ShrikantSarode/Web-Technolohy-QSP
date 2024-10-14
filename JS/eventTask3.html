@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Validation</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="myInput">Enter a text (length 10): </label>
+        <input type="text" id="myInput" name="textInput">
+        <p id="lengthMessage"></p>
+
+        <br>
+
+        <label for="ageInput">Enter your age (18 to 100): </label>
+        <input type="number" id="ageInput" name="ageInput">
+        <p id="ageMessage"></p>
+
+        <br>
+
+        <label for="emailInput">Enter your email: </label>
+        <input type="email" id="emailInput" name="emailInput">
+        <p id="emailMessage"></p>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function limitInputLength(input, maxLength) {
+            if (input.value.length > maxLength) {
+                input.value = input.value.slice(0, maxLength);
+            }
+        }
+        function validateForm() {
+            // Validation for text input
+            const textInput = document.forms[0].elements.textInput;
+            const maxLength = 10;
+            const lengthMessage = document.getElementById("lengthMessage");
+            if (textInput.value.length > maxLength) {
+                lengthMessage.textContent = "Input length should be 10 characters.";
+                alert("Invalid input length. Please enter 10 characters.");
+                return false;
+            }
+             // Disable further typing
+             textInput.setAttribute("disabled", true);
+
+            // Validation for age input
+            const ageInput = document.forms[0].elements.ageInput;
+            const minAge = 18;
+            const maxAge = 100;
+            const ageMessage = document.getElementById("ageMessage");
+            const enteredAge = parseInt(ageInput.value);
+
+            if (isNaN(enteredAge) || enteredAge < minAge || enteredAge > maxAge) {
+                ageMessage.textContent = "Invalid age. Age must be between 18 and 100.";
+                alert("Invalid age. Please enter a valid number between 18 and 100.");
+                return false;
+            }
+
+            // Validation for email input
+            const emailInput = document.forms[0].elements.emailInput;
+            const emailMessage = document.getElementById("emailMessage");
+            const email = emailInput.value;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (!emailRegex.test(email)) {
+                emailMessage.textContent = "Invalid email. Please enter a valid email address.";
+                alert("Invalid email. Please enter a valid email address.");
+                return false;
+            }
+
+            // Form is valid
+            return true;
+        }
+    </script>
+</body>
+</html>

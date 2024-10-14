@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="print"></h1>
+    <button onclick="getStart()">Get Arrays Power</button>
+    <script>
+
+        let ele=document.getElementById("print")
+        let a =[1,2,3,4,5]
+        
+
+        function getStart() {
+           for (let i = 0; i < a.length; i++) {
+                // document.write(a);
+               
+                ele.innerHTML=`Power of ${a} is => ${a.map((element, index)=>Math.pow(a,index)) }`
+                
+            }
+
+            
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

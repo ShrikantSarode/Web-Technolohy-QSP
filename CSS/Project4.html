@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projext4</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url(./ai-generated.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #parent {
+      display: flex;
+      justify-content: end;
+      height: 100px;
+      width: 100%;
+      background-color: rgb(67, 142, 158);
+    }
+    main nav {
+      position: fixed;
+    }
+    li {
+      display: inline-block;
+      margin-top: 40px;
+    }
+    a {
+      padding: 20px;
+      margin: 20px;
+      background-color: black;
+      border-radius: 30px;
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+    .form {
+      margin-top: 50px;
+      height: 40px;
+      /* width: 50%; */
+      padding: 5px;
+      align-items: center;
+      display: inline-block;
+      font-size: 30px;
+
+      margin-left: 20px;
+    }
+    .form1 {
+      padding: 10px;
+      padding-right: 80px;
+      margin-left: 60px;
+      outline: none;
+      border-radius: 10px;
+      background-image: url(./ai-generated.jpg);
+      color: white;
+    }
+    #mess {
+      margin-left: 180px;
+      width: 250px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 0px;
+      outline: none;
+      background-image: url(./ai-generated.jpg);
+      color: white;
+    }
+    #btn {
+      margin: auto;
+      margin-left: 200px;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background-image: url(./ai-generated.jpg);
+      color: white;
+    }
+    #box {
+      height: 500px;
+      width: 500px;
+      border: 3px solid yellow;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 100px;
+      color: white;
+      background-image: url(./boat.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <main id="parent">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <section id="box">
+      <form action="" id="form">
+        <label for="" class="form">Name:</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form1"
+          autofocus
+          placeholder="Enter Your Name"
+        /><br />
+
+        <label for="" class="form">Email:</label>
+        <input
+          type="email"
+          name=""
+          id=""
+          class="form1"
+          placeholder="Enter Your Email"
+        /><br />
+
+        <label for="" class="form">Message:</label><br />
+        <textarea
+          name=""
+          id="mess"
+          cols="20"
+          rows="5"
+          placeholder="Enter your Message"
+        ></textarea>
+
+        <input type="submit" value="Submit" id="btn" />
+      </form>
+    </section>
+  </body>
+</html>

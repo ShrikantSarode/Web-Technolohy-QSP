@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="inp1">What is H2O?</label>
+    <input type="text" name="inp1" id="inp1" /><br><br>
+
+    <input type="button" value="submit" onclick="checkAnswer()">
+
+    <script>
+      function checkAnswer() {
+        let e = document.getElementById("inp1").value;
+        let q1 = new Promise((resolve, reject) => {
+          if (e.toLowerCase() === "water") {
+            resolve("Correct answer");
+          } else {
+            reject("Incorrect");
+          }
+        });
+
+        q1
+          .then((result) => {
+            document.write(result);
+          })
+          .catch((error) => {
+            document.write(error);
+          });
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">What is H20 ?</label>
+    <input type="text" name="" id="inp1" /><br><br>
+
+    <input type="submit" value="submit" onclick="q1">
+
+    <script>
+      let e = document.getElementById("inp1");
+
+      let q1 = new Promise((res1, rej1) => {
+        res1(() => {
+          if (e.value == "water" || "WATER") {
+            document.write("Correct answer");
+          }
+          rej1("Incorrect ");
+        });
+      });
+
+      
+    </script>
+  </body>
+</html>
+ -->

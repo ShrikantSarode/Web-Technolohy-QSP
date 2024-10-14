@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let human={
+            name:'chandu',
+            age:23,
+            contact:7777777777,
+            status:true,
+            wifeDetails:{name:"Ranu",id:123,age:22}
+        }
+        console.log(human);
+        console.log(human.wifeDetails.name);
+        human.wifeDetails.name="katrina"
+        console.log(human.wifeDetails);
+        delete human.wifeDetails;
+        console.log(human);
+    </script>
+</body>
+</html>

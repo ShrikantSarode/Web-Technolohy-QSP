@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    #parent {
+      background-color: black;
+      height: 100%;
+      width: 100%;
+    }
+    
+
+    main nav {
+      height: 120px;
+      width: 100%;
+      background-color: black;
+      position: fixed;
+    }
+    ul {
+      position: relative;
+      margin-left: 900px;
+    }
+
+    ul li {
+      display: inline-block;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    li a {
+      background-color: black;
+      padding: 30px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      box-shadow: 4px 2px 2px white;
+    }
+    .container {
+      height: 500px;
+      width: 400px;
+      border: 2px solid;
+      margin-top: 170px;
+      margin-bottom: 30px;
+    }
+    #container1 {
+      background-position: center;
+      background-size: cover;
+      margin-left: 200px;
+      display: inline-block;
+      border-left: 3px solid white;
+      border-bottom: 3px solid white;
+
+      border-radius: 20px;
+    }
+    #container2 {
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      margin-left: 300px;
+      border-top: 3px solid white;
+      border-right: 3px solid white;
+      border-radius: 20px;
+    }
+    #container3 {
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      margin-left: 204px;
+      position: relative;
+
+      border-radius: 20px;
+    }
+    #container4 {
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      border-bottom: 3px solid white;
+      border-left: 3px solid white;
+      border-radius: 20px;
+      margin-left: 300px;
+    }
+    .container:hover {
+      box-shadow: 15px 15px 15px red;
+    }
+    .skills {
+      height: 200px;
+      width: 200px;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 30px;
+      box-shadow: 6px 6px 2px black;
+      /* border: 1px solid white; */
+    }
+    #skill1 {
+      background-image: url(./html-5.png);
+      background-position: center;
+      background-size: cover;
+    }
+    #skill2 {
+      background-image: url(./css-3.png);
+      background-position: center;
+      background-size: cover;
+    }
+    #skill3 {
+      background-image: url(./java-script.png);
+      background-position: center;
+      background-size: cover;
+    }
+    #skill4 {
+      background-image: url(./react.png);
+      background-position: center;
+      background-size: cover;
+    }
+    .info {
+      height: 200px;
+      width: 300px;
+      border: 2px solid white;
+      border-radius: 30px;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    #para1 {
+      padding: 20px;
+      height: 200px;
+      color: white;
+      overflow: scroll;
+    }
+    #para2 {
+      padding: 20px;
+      height: 200px;
+      color: white;
+      overflow: scroll;
+    }
+    #para3 {
+      padding: 20px;
+      height: 200px;
+      color: white;
+      overflow: scroll;
+    }
+    #para4 {
+      padding: 20px;
+      height: 200px;
+      color: white;
+      overflow: scroll;
+    }
+    
+  </style>
+  <body>
+    <main id="parent">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="container" id="container1">
+        <div class="skills" id="skill1"></div>
+        <div class="info" id="info1">
+          <div id="para1">
+            <p>
+              The HyperText Markup Language or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+              It defines the meaning and structure of web content. It is often
+              assisted by technologies such as Cascading Style Sheets (CSS) and
+              scripting languages such as JavaScript. Web browsers receive HTML
+              documents from a web server or from local storage and render the
+              documents into multimedia web pages. HTML describes the structure
+              of a web page semantically and originally included cues for its
+              appearance. HTML elements are the building blocks of HTML pages.
+              With HTML constructs, images and other objects such as interactive
+              forms may be embedded into the rendered page. HTML provides a
+              means to create structured documents by denoting structural
+              semantics for text such as headings, paragraphs, lists, links,
+              quotes, and other items. HTML elements are delineated by tags,
+              written using angle brackets. Tags such as and directly introduce
+              content into the page. Other tags such assurround and provide
+              information about document text and may include sub-element tags.
+              Browsers do not display the HTML tags but use them to interpret
+              the content of the page.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container2">
+        <div class="skills" id="skill2"></div>
+        <div class="info" id="info2">
+          <div id="para2">
+            <p>
+              Cascading Style Sheets (CSS) is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language such as HTML or XML (including XML dialects such as SVG,
+              MathML or XHTML).[1] CSS is a cornerstone technology of the World
+              Wide Web, alongside HTML and JavaScript.[2] CSS is designed to
+              enable the separation of content and presentation, including
+              layout, colors, and fonts.[3] This separation can improve content
+              accessibility; provide more flexibility and control in the
+              specification of presentation characteristics; enable multiple web
+              pages to share formatting by specifying the relevant CSS in a
+              separate .css file, which reduces complexity and repetition in the
+              structural content; and enable the .css file to be cached to
+              improve the page load speed between the pages that share the file
+              and its formatting. Separation of formatting and content also
+              makes it feasible to present the same markup page in different
+              styles for different rendering methods, such as on-screen, in
+              print, by voice (via speech-based browser or screen reader), and
+              on Braille-based tactile devices. CSS also has rules for alternate
+              formatting if the content is accessed on a mobile device.[4] The
+              name cascading comes from the specified priority scheme to
+              determine which style rule applies if more than one rule matches a
+              particular element. This cascading priority scheme is predictable.
+              The CSS specifications are maintained by the World Wide Web
+              Consortium (W3C). Internet media type (MIME type) text/css is
+              registered for use with CSS by RFC 2318 (March 1998). The W3C
+              operates a free CSS validation service for CSS documents.[5] In
+              addition to HTML, other markup languages support the use of CSS
+              including XHTML, plain XML, SVG, and XUL. CSS is also used in GTK
+              widget toolkit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container3">
+        <div class="skills" id="skill3"></div>
+        <div class="info" id="info3">
+          <div id="para3">
+            <p>
+              JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a
+              programming language that is one of the core technologies of the
+              World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of
+              websites use JavaScript on the client side for webpage
+              behavior,[10] often incorporating third-party libraries. All major
+              web browsers have a dedicated JavaScript engine to execute the
+              code on users' devices. JavaScript is a high-level, often
+              just-in-time compiled language that conforms to the ECMAScript
+              standard.[11] It has dynamic typing, prototype-based
+              object-orientation, and first-class functions. It is
+              multi-paradigm, supporting event-driven, functional, and
+              imperative programming styles. It has application programming
+              interfaces (APIs) for working with text, dates, regular
+              expressions, standard data structures, and the Document Object
+              Model (DOM). The ECMAScript standard does not include any
+              input/output (I/O), such as networking, storage, or graphics
+              facilities. In practice, the web browser or other runtime system
+              provides JavaScript APIs for I/O. JavaScript engines were
+              originally used only in web browsers, but are now core components
+              of some servers and a variety of applications. The most popular
+              runtime system for this usage is Node.js. Although Java and
+              JavaScript are similar in name, syntax, and respective standard
+              libraries, the two languages are distinct and differ greatly in
+              design.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container4">
+        <div class="skills" id="skill4"></div>
+        <div class="info" id="info4">
+          <div id="para4">
+            <p>
+              JavaScript often abbreviated as JS, is a programming language that
+              is one of the core technologies of the World Wide Web, alongside
+              HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the
+              client side for webpage behavior,[10] often incorporating
+              third-party libraries. All major web browsers have a dedicated
+              JavaScript engine to execute the code on users' devices.
+              JavaScript is a high-level, often just-in-time compiled language
+              that conforms to the ECMAScript standard.[11] It has dynamic
+              typing, prototype-based object-orientation, and first-class
+              functions. It is multi-paradigm, supporting event-driven,
+              functional, and imperative programming styles. It has application
+              programming interfaces (APIs) for working with text, dates,
+              regular expressions, standard data structures, and the Document
+              Object Model (DOM). The ECMAScript standard does not include any
+              input/output (I/O), such as networking, storage, or graphics
+              facilities. In practice, the web browser or other runtime system
+              provides JavaScript APIs for I/O. JavaScript engines were
+              originally used only in web browsers, but are now core components
+              of some servers and a variety of applications. The most popular
+              runtime system for this usage is Node.js. Although Java and
+              JavaScript are similar in name, syntax, and respective standard
+              libraries, the two languages are distinct and differ greatly in
+              design. Components React code is made of entities called
+              components. React applications typically consist of many layers of
+              components. The components are rendered to a root element in the
+              DOM using the React DOM library. When rendering a component,
+              values are passed between components through props (short for
+              "properties"). Values internal to a component are called its
+              state.[12] The two primary ways of declaring components in React
+              are through function Routing React itself does not come with
+              built-in support for routing. React is primarily a library for
+              building user interfaces, and it doesn't include a full-fledged
+              routing solution out of the box. However, there are popular
+              third-party libraries that can be used to handle routing in React
+              applications. One such library is react-router, which provides a
+              comprehensive routing solution for React applications.[24] It
+              allows you to define routes, manage navigation, and handle URL
+              changes in a React-friendly way. To use react-router, you need to
+              install it as a separate package and integrate it into your React
+              application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

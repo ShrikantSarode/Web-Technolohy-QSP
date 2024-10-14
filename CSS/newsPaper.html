@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define the grid container */
+    .newspaper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+      grid-template-rows: auto; /* Rows adjust to content */
+      grid-gap: 20px; /* Add some spacing between grid items */
+    }
+    
+    /* Header styles */
+    .header {
+      grid-column: 1 / 6; /* Span all columns */
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    
+    /* Main content styles */
+    .main-content {
+      grid-column: 3 / 6; /* Span three right columns */
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    
+    /* Sidebar styles */
+    .sidebar {
+      grid-column: 1 / 2; /* Span one left column */
+      grid-row: 2 / 3; /* Extend the sidebar to match the newspaper heading */
+      background-color: #eee;
+      padding: 10px;
+    }
+    
+    /* Featured Article styles */
+    .featured-article {
+      grid-column: 2 / 5; /* Span three columns in the middle */
+      background-color: #ffd700;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="newspaper">
+    <div class="header">
+      <h1>Times of India</h1>
+    </div>
+    <div class="main-content">
+      <h2>Breaking News</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      
+      <h2>Politics</h2>
+      <p>Political news goes here...</p>
+      
+      <h2>Technology</h2>
+      <p>The latest in tech and innovation...</p>
+      
+      <h2>Sports</h2>
+      <p>Sports scores and highlights...</p>
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li>Weather</li>
+        <li>Entertainment</li>
+      
+      </ul>
+    </div>
+    <div class="featured-article">
+      <h2>Featured Article</h2>
+      <p>This is the featured article with additional content...</p>
+    </div>
+
+    <div class="main-content">
+        <h2>Breaking News</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        
+        <h2>Politics</h2>
+        <p>Political news goes here...</p>
+        
+        <h2>Technology</h2>
+        <p>The latest in tech and innovation...</p>
+        
+        <h2>Sports</h2>
+        <p>Sports scores and highlights...</p>
+      </div>
+
+      <div class="sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+          <li>Weather</li>
+          <li>Entertainment</li>
+        
+        </ul>
+      </div>
+
+    
+  </div>
+</body>
+</html>

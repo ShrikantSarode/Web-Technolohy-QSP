@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Linear grad</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 100%;
+            border: 1px solid;
+            margin-top: 100px;
+        }
+        #box1{
+            background-image: repeating-linear-gradient(red, yellow, blue);
+        }
+        #box2{
+            background-image: repeating-linear-gradient(90deg, red, yellow 10%, green 20%);
+        }
+        #box3{
+            background-image: repeating-linear-gradient(45deg, red, blue 10%, yellow 20%);
+        }
+        #box4{
+            background-image: repeating-linear-gradient(45deg, red 0px, red 10px, red 10px, yellow 30px);
+        }
+        #box5{
+            background-image: repeating-linear-gradient(to top, pink 1px, red 10px);
+        }
+        #box6{
+            background-image: repeating-linear-gradient(to left, rgb(159, 255, 241) 10px, rgb(0, 135, 172) 20px, rgb(19, 52, 72) 100px);
+        }
+        #box7{
+            background-image: repeating-linear-gradient(to right, aqua 0px, aqua 10px, yellow 20px);
+        }
+        #box8{
+            background-image: repeating-linear-gradient(to bottom left, orange 50px, red 80px,orange 30%);
+        }
+        #box9{
+            background-image: repeating-linear-gradient(to top left, rgba(250, 8, 116, 0) 1px, rgba(250, 8, 116, 0.1)10px, rgba(250, 8, 116, 0.2), rgba(250, 8, 116, 0.3), rgba(250, 8, 116, 0.4), rgba(250, 8, 116, 0.5), rgba(250, 8, 116, 0.6), rgba(250, 8, 116, 0.7), rgba(250, 8, 116, 0.8) 70px, rgba(250, 8, 116, 0.9) 55px, rgba(250, 8, 116, 1) 100px);
+        }
+        #box10{
+            background-image: repeating-linear-gradient(to bottom right, rgba(63, 120, 86) 10px, rgba(126, 195, 132) 90px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+    <div class="box" id="box9"></div>
+    <div class="box" id="box10"></div>
+</body>
+</html>

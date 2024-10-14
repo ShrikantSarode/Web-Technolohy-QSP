@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            FIR Form
+        </legend>
+        <form action="/submit-fir-form" method="post">
+            <table>
+              <tr>
+                <td><label for="complainantName">Complainant Name:</label></td>
+                <td><input type="text" id="complainantName" name="complainantName" required></td>
+              </tr>
+              <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+              </tr>
+              <tr>
+                <td><label for="incidentLocation">Incident Location:</label></td>
+                <td><input type="text" id="incidentLocation" name="incidentLocation" required></td>
+              </tr>
+              <tr>
+                <td><label for="incidentDescription">Incident Description:</label></td>
+                <td><textarea id="incidentDescription" name="incidentDescription" required></textarea></td>
+              </tr>
+              <tr>
+                <td><label for="witnessName">Witness Name:</label></td>
+                <td><input type="text" id="witnessName" name="witnessName" required></td>
+              </tr>
+              <tr>
+                <td><label for="witnessContact">Witness Contact:</label></td>
+                <td><input type="tel" id="witnessContact" name="witnessContact" required></td>
+              </tr>
+              <tr>
+                <td><label for="officerName">Investigating Officer Name:</label></td>
+                <td><input type="text" id="officerName" name="officerName" required></td>
+              </tr>
+              <tr>
+                <td><label for="officerBadge">Investigating Officer Badge Number:</label></td>
+                <td><input type="text" id="officerBadge" name="officerBadge" required></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="submit" value="Submit FIR"></td>
+              </tr>
+            </table>
+          </form>
+          
+    </fieldset>
+</body>
+</html>

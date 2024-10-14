@@ -1,0 +1,13 @@
+h1{
+    /* important is used to set priority */
+    color: rgb(6, 102, 146) !important;
+    background-color: darkgray;
+}
+
+h2{
+    color: red;
+
+}
+h3{
+    color: darkorange;
+}

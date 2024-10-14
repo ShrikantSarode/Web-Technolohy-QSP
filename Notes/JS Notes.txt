@@ -1,0 +1,141 @@
+Js Notes:-
+
+JavaScript Object:- a js object is an entity having state and behaviour(properties and method).
+for example:- car,bike,chair,glass,monitor,etc.
+
+Js is an object based language, in js everything is an object.
+
+Js is tenplete based not a class based.
+
+Here, we dont create class to get the object, but we can create the object without creating a class.
+
+Creating Obj in js:-There are 3 ways to creating obj-
+1. By obj literal.
+2.By using new keyword(Creating instance of object directly).
+3.By using an obj constructor(Using new keyword).
+
+1.Js obj by obj literal:-
+Syntax:- var_name objRef{property1:value1,property2:value2,property n:value n}
+
+note:-AS we can see, property and value is separated by : (colan).
+
+let obj={ename:"jay",age:22,proff:"Engineer"}
+console.log(obj);
+o/p:- {ename:"jay",age:22,proff:"Engineer"}
+
+2.By using new keyword:-here,new keyword is resposible to create an object.
+syntax:- let objRef = new Object(); 
+
+
+
+ex- let emp = new Object();
+
+emp.name="jay";
+emp.sal=50000;
+emp.proff="Civil Engineer";
+
+console.log(emp);
+o/p:- jay,50000,Civil Engineer
+
+3.By using an obj constructor:-here,we need to create function with argument.Each argument value can be assigned in the current obj by using "this" keyword.
+The 'this' keyword referce to the current object.
+
+ex- function emp{
+id,name,salary
+}
+this.id;
+this.name;
+this.salary;
+
+let emp=new Object(22"jay",5000);
+
+console.log(emp);
+------------------------------------------------------------------------------------------------------------------------
+4-10-23
+-------------------------------------------------------------------------------------------------------------------------
+Arrays- Array is a continuos block of memory which is used to store multiple values of heterogenous type.
+
+Creation of an arrays:-
+We can create an array in 3 different ways.
+1- Using Array literal.
+Syntax:- let arr=[value1,value2,value n]
+
+ex- let arr=["Hello",10,20,30,90,60,180]
+	console.log(arr);
+
+o/p:- Hello,10,20,30,90,60,180
+
+console.log(typeOf arr);//Object Type
+
+2-By creating an instance of array using new keyword.
+Syntax:- let varName =new Array();
+
+ex- let a=new Array();
+	a[0]=10;
+	a[1]=20;
+	a[2]=30;
+	a[3]=40;
+	clg(a); //[10,20,30,40]
+
+3-By using array constructor.
+Syntax:- let varName =new Array();
+
+ex- let a=new Array(10,20,30,40);
+	clg(a); //[10,20,30,40]
+
+TO ACCESS THE ARRAY ELEMENT :- We can access the array element with the help of array reference variable and array operator
+and index.
+
+syntax:- array_object_reference[index]
+
+ex- let arr[10];
+
+INDEX:- It is a number which starts with 0 and ends with length of the array object-1.
+
+ex- let arr1=[10,20,30]
+clg(arr1[1]); //20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
